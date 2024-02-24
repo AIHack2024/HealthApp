@@ -11,6 +11,7 @@ namespace HealthApp.Data
         }
 
         public DbSet<AutoimmuneDiseaseEntry> Patients { get; set; }
+        public DbSet<Doctor> Doctors { get; set; }
        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
