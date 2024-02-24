@@ -1,8 +1,18 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Home";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container text-center mt-5">
+    <h1 class="display-4 mb-4" style="color: #007bff;">Welcome to Your Diagnosis Center</h1>
+    <p class="lead mb-5" style="color: #007bff;">Click the button below to check your diagnosis results.</p>
+    <a asp-action="GetData" asp-controller="Inference" class="btn btn-lg" style="background-color: #007bff; color: #ffffff; border-radius: 20px; border: 2px solid #ff7f50;">Check Results</a>
 </div>
+
+<style>
+    .btn:hover {
+        background-color: #0056b3; /* Darker blue on hover */
+        color: #ff7f50; /* Change text color to orange on hover */
+        border-color: #ff7f50; /* Ensure border color remains orange */
+    }
+</style>

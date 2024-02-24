@@ -1,0 +1,257 @@
+﻿@model IEnumerable<HealthApp.Models.PatientRecord>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Gender)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Symptoms)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SystemicManifestations)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinalDiagnosis)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ANA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AntiDsDNA)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RF)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CRP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.WBC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RBC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Hemoglobin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Platelets)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ESR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FVC)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FEV1)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FEV1FVCRatio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Creatinine)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GFR)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CPeptide)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autoantibodies)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FastingGlucose)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HbA1c)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AntiCCP)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodPressure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.HeartRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RespiratoryRate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BodyTemperature)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OxygenSaturation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cholesterol)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ALT)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AST)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CurrentMedications)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.XRayFindings)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MRIFindings)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EchocardiogramResults)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Gender)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Symptoms)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SystemicManifestations)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FinalDiagnosis)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ANA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AntiDsDNA)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CRP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.WBC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RBC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Hemoglobin)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Platelets)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ESR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FVC)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEV1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FEV1FVCRatio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creatinine)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GFR)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CPeptide)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Autoantibodies)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FastingGlucose)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HbA1c)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AntiCCP)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BloodType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BloodPressure)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HeartRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RespiratoryRate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BodyTemperature)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OxygenSaturation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cholesterol)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ALT)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AST)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CurrentMedications)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.XRayFindings)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MRIFindings)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EchocardiogramResults)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

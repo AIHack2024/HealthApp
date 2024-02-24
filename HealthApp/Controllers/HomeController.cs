@@ -1,5 +1,8 @@
-﻿using HealthApp.Models;
+﻿using HealthApp.Data;
+using HealthApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.ML.OnnxRuntime.Tensors;
+using Microsoft.ML.OnnxRuntime;
 using System.Diagnostics;
 
 namespace HealthApp.Controllers
@@ -7,14 +10,18 @@ namespace HealthApp.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
         {
+            var users = _context.Patients.ToList();
+
             return View();
         }
 

@@ -1,0 +1,43 @@
+﻿@model HealthApp.Controllers.InferenceController.DataViewModel
+
+
+<style>
+    .card-header {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .card-title {
+        color: #007bff;
+    }
+</style>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Diagnosis Result";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Diagnosis Result</h2>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Disease Diagnosed</h5>
+                    <p class="card-text">@Model.disease</p>
+                    <hr>
+                    <h5 class="card-title">Recommended Doctor</h5>
+                    <div>
+                        <p><strong>Name:</strong> @Model.doctor.Name</p>
+                        <p><strong>Specialization:</strong> @Model.doctor.Specialization</p>
+                        @* <p><strong>Contact:</strong> @Model.doctor.Contact</p>
+                        <p><strong>Location:</strong> @Model.doctor.Location</p> *@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

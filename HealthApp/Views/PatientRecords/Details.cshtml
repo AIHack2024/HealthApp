@@ -1,0 +1,247 @@
+﻿@model HealthApp.Models.PatientRecord
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>PatientRecord</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Symptoms)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Symptoms)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SystemicManifestations)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SystemicManifestations)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FinalDiagnosis)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FinalDiagnosis)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ANA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ANA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AntiDsDNA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AntiDsDNA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CRP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CRP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.WBC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.WBC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RBC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RBC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Hemoglobin)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Hemoglobin)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Platelets)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Platelets)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ESR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ESR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FVC)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FVC)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FEV1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FEV1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FEV1FVCRatio)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FEV1FVCRatio)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Creatinine)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Creatinine)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GFR)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GFR)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPeptide)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPeptide)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Autoantibodies)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Autoantibodies)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FastingGlucose)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FastingGlucose)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HbA1c)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HbA1c)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AntiCCP)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AntiCCP)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BloodType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BloodPressure)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BloodPressure)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.HeartRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.HeartRate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.RespiratoryRate)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.RespiratoryRate)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.BodyTemperature)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.BodyTemperature)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.OxygenSaturation)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.OxygenSaturation)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cholesterol)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cholesterol)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.ALT)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.ALT)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.AST)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.AST)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrentMedications)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CurrentMedications)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.XRayFindings)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.XRayFindings)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.MRIFindings)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.MRIFindings)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EchocardiogramResults)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EchocardiogramResults)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Score" asp-controller="Inference" asp-route-id="@Model?.Id">Score</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
