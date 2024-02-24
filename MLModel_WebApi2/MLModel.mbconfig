@@ -1,0 +1,322 @@
+﻿{
+  "TrainingTime": 100,
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "TabularFile",
+    "Version": 1,
+    "FilePath": "C:\\Users\\idang\\Downloads\\autoimmune_diseases_dataset_1000.csv",
+    "Delimiter": ",",
+    "DecimalMarker": ".",
+    "HasHeader": true,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Age",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Gender",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "Symptoms",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "LaboratoryTests",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "FamilyHistory",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "PreviousDiagnosis",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      },
+      {
+        "ColumnName": "AutoimmuneDisease",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 2
+      }
+    ]
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 1,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.23976914688289849,
+        "RuntimeInSeconds": 2.1080000400543213
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.28088280634583312,
+        "RuntimeInSeconds": 3.5069999694824219
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.23976914688289849,
+        "RuntimeInSeconds": 1.13100004196167
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.27438506260560536,
+        "RuntimeInSeconds": 4.0469999313354492
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.25693754106592459,
+        "RuntimeInSeconds": 4.2789998054504395
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.26391641567096025,
+        "RuntimeInSeconds": 1.5809999704360962
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.29864867655512251,
+        "RuntimeInSeconds": 4.1919999122619629
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.2679118446617802,
+        "RuntimeInSeconds": 0.86000001430511475
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.2746102997914584,
+        "RuntimeInSeconds": 0.88599997758865356
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.23976914688289849,
+        "RuntimeInSeconds": 1.1820000410079956
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.2814419901907152,
+        "RuntimeInSeconds": 5.434999942779541
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.25866568247443184,
+        "RuntimeInSeconds": 4.2670001983642578
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.26393754106592449,
+        "RuntimeInSeconds": 1.1779999732971191
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.26444965791480168,
+        "RuntimeInSeconds": 4.8070001602172852
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.27117859059467159,
+        "RuntimeInSeconds": 0.8880000114440918
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.25206694967708909,
+        "RuntimeInSeconds": 0.57200002670288086
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.288287981095805,
+        "RuntimeInSeconds": 7.4739999771118164
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaMaximumEntropyMulti",
+        "Score": 0.2505007521879728,
+        "RuntimeInSeconds": 1.1950000524520874
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.27012696010779169,
+        "RuntimeInSeconds": 5.130000114440918
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "SdcaLogisticRegressionOva",
+        "Score": 0.25923575099369212,
+        "RuntimeInSeconds": 4.36299991607666
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LightGbmMulti",
+        "Score": 0.27054746119480827,
+        "RuntimeInSeconds": 1.0540000200271606
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsLogisticRegressionOva",
+        "Score": 0.26393754106592449,
+        "RuntimeInSeconds": 1.093000054359436
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.26070683040675025,
+        "RuntimeInSeconds": 0.8970000147819519
+      },
+      {
+        "Version": 0,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.26567765614169209,
+        "RuntimeInSeconds": 6.2239999771118164
+      }
+    ],
+    "Pipeline": {
+      "parameter": {
+        "0": {
+          "OutputColumnNames": [
+            "Gender",
+            "FamilyHistory",
+            "PreviousDiagnosis"
+          ],
+          "InputColumnNames": [
+            "Gender",
+            "FamilyHistory",
+            "PreviousDiagnosis"
+          ]
+        },
+        "1": {
+          "OutputColumnNames": [
+            "Age"
+          ],
+          "InputColumnNames": [
+            "Age"
+          ]
+        },
+        "2": {
+          "InputColumnName": "Symptoms",
+          "OutputColumnName": "Symptoms"
+        },
+        "3": {
+          "InputColumnName": "LaboratoryTests",
+          "OutputColumnName": "LaboratoryTests"
+        },
+        "4": {
+          "InputColumnNames": [
+            "Gender",
+            "FamilyHistory",
+            "PreviousDiagnosis",
+            "Age",
+            "Symptoms",
+            "LaboratoryTests"
+          ],
+          "OutputColumnName": "Features"
+        },
+        "5": {
+          "OutputColumnName": "AutoimmuneDisease",
+          "InputColumnName": "AutoimmuneDisease"
+        },
+        "6": {
+          "NumberOfLeaves": 4,
+          "MinimumExampleCountPerLeaf": 30,
+          "NumberOfTrees": 4,
+          "MaximumBinCountPerFeature": 370,
+          "FeatureFraction": 0.99999999,
+          "LearningRate": 0.029200573947844442,
+          "LabelColumnName": "AutoimmuneDisease",
+          "FeatureColumnName": "Features"
+        },
+        "7": {
+          "OutputColumnName": "PredictedLabel",
+          "InputColumnName": "PredictedLabel"
+        }
+      },
+      "estimators": [
+        "OneHotEncoding",
+        "ReplaceMissingValues",
+        "FeaturizeText",
+        "FeaturizeText",
+        "Concatenate",
+        "MapValueToKey",
+        "FastTreeOva",
+        "MapKeyToValue"
+      ]
+    },
+    "MetricName": "MicroAccuracy"
+  },
+  "Type": "TrainingConfig",
+  "Version": 2
+}
